@@ -54,7 +54,16 @@ The example_scenes directory demonstrates various Motion Canvas capabilities:
 - Run one pass of the tests that MUST fail (do not create mock tests)
 - The tests must be integrasted, not unit tests, so make just one large test per instruction I give you. 
 
+## Git Workflow & Development Environment
+
+**Git Worktree Configuration**: See `GIT_WORKTREE_STATUS.md` for complete worktree setup, branch structure, and development workflow guidelines.
+
+### Current Development Setup
+- **Main worktree**: Primary Motion Canvas development (main branch)
+- **Excalidraw worktree**: `dev-branches/excalidraw/` for Excalidraw tools development (excalidraw-tools branch)
+
 ## Tools that you can use 
 On top of all the CLASSIC tools that you will be defined to you, you may also peform the following actions: 
+@
 - View @understanding_claude_code/tool_definitions.jsonl if you want a refresher of the different CLASSIC tools available
 - Call @tools/fetch_iconify/fetch_iconify.go using go commands to download an svg from iconify and convert it to PNG. This is currently the only option for downloading external assets! So go for it, if the user wants a static image or svg from the internet, or if you feel like it would be useful for the current Canvas. 
