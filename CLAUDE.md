@@ -65,6 +65,25 @@ The example_scenes directory demonstrates various Motion Canvas capabilities:
 ## Tools that you can use 
 On top of all the CLASSIC tools that you will be defined to you, you may also use the following tools, and view them for the documentation of the tool. 
 
-- Call @tools/fetch_iconify/tool_definitions/fetch_iconify.go using go commands to download an svg from iconify and convert it to PNG then savie it locally. This is currently the only option for downloading external assets! So go for it, if the user wants a static image or svg from the internet, or if you feel like it would be useful for the current Canvas. You MUST read the file @tools/fetch_iconify/tool_definitions/fetch_iconify.go
-- Call @excalidraw_tools/append_png_to_excalidraw/tool_definition.js to appe nd a png saved locally to an excalidraw file. You MUST read the file first. 
+- **Iconify Icon Fetcher**: Call `tools/fetch_iconify/tool_definitions/fetch_iconify.go` using go commands to download an SVG from Iconify and convert it to PNG, saving it to `public/assets/pngs/`. This is currently the only option for downloading external assets! So use it if the user wants a static image or SVG from the internet, or if you feel it would be useful for the current Canvas.
+
+- **PNG to Excalidraw Tool**: Call `tools/append_png_to_excalidraw/append_png_to_excalidraw.js` to append a PNG saved locally to an Excalidraw file. The tool expects PNGs to be in `public/assets/pngs/` directory and can add them to any `.excalidraw` file in the `excalidraw_canvases/` directory.
+
+## Directory Structure
+
+### Key Directories
+- `public/assets/pngs/` - Storage location for PNG assets (used by tools and Motion Canvas)
+- `excalidraw_canvases/` - Contains Excalidraw diagram files (.excalidraw format)
+- `tools/` - Contains utility tools for the project:
+  - `tools/fetch_iconify/` - Icon fetching and conversion tool
+  - `tools/append_png_to_excalidraw/` - Tool for adding PNGs to Excalidraw files
+
+### Tool Usage Examples
+```bash
+# Fetch an icon and convert to PNG
+cd tools/fetch_iconify && go run tool_definitions/fetch_iconify.go "icon-name"
+
+# Add PNG to Excalidraw file  
+cd tools/append_png_to_excalidraw && node append_png_to_excalidraw.js "icon-name.png" "../../excalidraw_canvases/diagram.excalidraw"
+``` 
 
