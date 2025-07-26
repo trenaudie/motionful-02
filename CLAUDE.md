@@ -66,5 +66,5 @@ The example_scenes directory demonstrates various Motion Canvas capabilities:
 On top of all the CLASSIC tools that you will be defined to you, you may also use the following tools, and view them for the documentation of the tool. 
 
 - Call @tools/fetch_iconify/tool_definitions/fetch_iconify.go using go commands to download an svg from iconify and convert it to PNG then savie it locally. This is currently the only option for downloading external assets! So go for it, if the user wants a static image or svg from the internet, or if you feel like it would be useful for the current Canvas. You MUST read the file @tools/fetch_iconify/tool_definitions/fetch_iconify.go
-- Call @excalidraw_tools/tool_definitions/append_png_to_excalidraw.js to appe nd a png saved locally to an excalidraw file. You MUST read the file first. 
+- Call @excalidraw_tools/append_png_to_excalidraw/tool_definition.js to appe nd a png saved locally to an excalidraw file. You MUST read the file first. 
 

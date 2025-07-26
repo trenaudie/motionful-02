@@ -7,7 +7,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { appendPngToExcalidraw } = require('./append_png_to_excalidraw');
+const { appendPngToExcalidraw } = require('./tool_definition');
 
 function runTest() {
     console.log('🧪 Testing append_png_to_excalidraw functionality...\n');
