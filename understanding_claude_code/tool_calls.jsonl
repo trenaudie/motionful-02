@@ -1,0 +1,1 @@
+{"type": "tool_use", "id": "toolu_01Q7WvziD1gNxDHtYzew4pZk", "name": "Read", "input": {"file_path": "/home/bits/motionful-02/commands.sh"}, "cache_control": {"type": "ephemeral"}}

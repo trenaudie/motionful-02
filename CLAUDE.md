@@ -10,7 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Architecture
 
-This is a Motion Canvas project for creating programmatic animations. Motion Canvas is a TypeScript library for creating animations using code.
+This is a Motion Canvas / Excalidraw project for creating programmatic animations. Motion Canvas is a TypeScript library for creating animations using code.
 
 ### Key Structure
 - `src/project.ts` - Main project configuration file that defines which scenes to include
@@ -48,3 +48,13 @@ The example_scenes directory demonstrates various Motion Canvas capabilities:
 - Layout systems and positioning
 - Node signals and reactive programming
 - Logging and debugging techniques
+
+## Guidelines for coding 
+- Creates tests and plan before code
+- Run one pass of the tests that MUST fail (do not create mock tests)
+- The tests must be integrasted, not unit tests, so make just one large test per instruction I give you. 
+
+## Tools that you can use 
+On top of all the CLASSIC tools that you will be defined to you, you may also peform the following actions: 
+- View @understanding_claude_code/tool_definitions.jsonl if you want a refresher of the different CLASSIC tools available
+- Call @tools/fetch_iconify/fetch_iconify.go using go commands to download an svg from iconify and convert it to PNG. This is currently the only option for downloading external assets! So go for it, if the user wants a static image or svg from the internet, or if you feel like it would be useful for the current Canvas. 
