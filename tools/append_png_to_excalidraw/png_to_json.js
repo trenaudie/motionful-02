@@ -10,7 +10,7 @@ const crypto = require('crypto');
 function pngToJson(filename) {
     try {
         // Construct the full path to the PNG file
-        const pngPath = path.join(__dirname, '..', 'public', 'assets', 'pngs', filename);
+        const pngPath = path.join('public', 'assets', 'pngs', filename);
         
         // Check if file exists
         if (!fs.existsSync(pngPath)) {

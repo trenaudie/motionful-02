@@ -54,6 +54,7 @@ The example_scenes directory demonstrates various Motion Canvas capabilities:
 - Run one pass of the tests that MUST fail (do not create mock tests)
 - The tests must be integrasted, not unit tests, so make just one large test per instruction I give you. 
 
+
 ## Git Workflow & Development Environment
 
 **Git Worktree Configuration**: See `GIT_WORKTREE_STATUS.md` for complete worktree setup, branch structure, and development workflow guidelines.
@@ -63,12 +64,13 @@ The example_scenes directory demonstrates various Motion Canvas capabilities:
 - **Excalidraw worktree**: `dev-branches/excalidraw/` for Excalidraw tools development (excalidraw-tools branch)
 
 ## Tools that you can use 
-On top of all the CLASSIC tools that you will be defined to you, you may also use the following tools, and view them for the documentation of the tool. 
+On top of all the Core tools that you will be defined to you, you may also use the following tools, and view them for the documentation of the tool. 
 
-- **Iconify Icon Fetcher**: Call `tools/fetch_iconify/tool_definitions/fetch_iconify.go` using go commands to download an SVG from Iconify and convert it to PNG, saving it to `public/assets/pngs/`. This is currently the only option for downloading external assets! So use it if the user wants a static image or SVG from the internet, or if you feel it would be useful for the current Canvas.
+- **Iconify Icon Fetcher**: Call `tools/fetch_iconify/tool_definitions/fetch_iconify.go` from the project root using go commands to download an SVG from Iconify and convert it to PNG, saving it to `public/assets/pngs/`. This is currently the only option for downloading external assets! So use it if the user wants a static image or SVG from the internet, or if you feel it would be useful for the current Canvas.
 
-- **PNG to Excalidraw Tool**: Call `tools/append_png_to_excalidraw/append_png_to_excalidraw.js` to append a PNG saved locally to an Excalidraw file. The tool expects PNGs to be in `public/assets/pngs/` directory and can add them to any `.excalidraw` file in the `excalidraw_canvases/` directory.
+- **PNG to Excalidraw Tool**: Call `tools/append_png_to_excalidraw/append_png_to_excalidraw.js` from the project root to append a PNG saved locally to an Excalidraw file. The tool expects PNGs to be in `public/assets/pngs/` directory and can add them to any `.excalidraw` file in the `excalidraw_canvases/` directory.
 
+- **Read** : This is one of the Core tools, but I must insist that you use it before trying the Write or Edit to a file, be it a code file or a json file. 
 ## Directory Structure
 
 ### Key Directories

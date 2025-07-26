@@ -120,7 +120,7 @@ func main() {
 	}
 
 	// Convert SVG to PNG and save using utils package
-	outputPath := filepath.Join("../../public/assets/pngs", query+".png")
+	outputPath := filepath.Join("public/assets/pngs", query+".png")
 	err = utils.SvgToPNG(svgData, outputPath, 256, 256)
 	if err != nil {
 		fmt.Printf("Error converting SVG to PNG: %v\n", err)

@@ -48,7 +48,7 @@ rather than testing isolated components with mocks.
 */
 func TestFetchCatIcon(t *testing.T) {
 	query := "cat"
-	outputPath := filepath.Join("../../public/assets/pngs", query+".png")
+	outputPath := filepath.Join("public/assets/pngs", query+".png")
 	
 	// Clean up any existing test file to ensure fresh test
 	os.Remove(outputPath)

@@ -7,14 +7,14 @@
 
 const fs = require('fs');
 const path = require('path');
-const { appendPngToExcalidraw } = require('./tool_definition');
+const { appendPngToExcalidraw } = require('./append_png_to_excalidraw');
 
 function runTest() {
     console.log('🧪 Testing append_png_to_excalidraw functionality...\n');
     
     const pngFilePath = 'dog.png'; // Relative to public/assets/pngs
-    const templatePath = path.join(__dirname, 'template.json');
-    const testOutputPath = path.join(__dirname, 'test-worktree', 'template_with_dog.json');
+    const templatePath = path.join('excalidraw_canvases', 'template.json');
+    const testOutputPath = path.join('excalidraw_canvases', 'template_with_dog.json');
     
     try {
         // Step 1: Copy template.json to test output location
@@ -23,7 +23,7 @@ function runTest() {
             throw new Error(`Template file not found: ${templatePath}`);
         }
         
-        // Ensure test-worktree directory exists
+        // Ensure excalidraw_canvases directory exists
         const testDir = path.dirname(testOutputPath);
         if (!fs.existsSync(testDir)) {
             fs.mkdirSync(testDir, { recursive: true });
