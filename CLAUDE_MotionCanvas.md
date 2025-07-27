@@ -43,7 +43,12 @@ The example_scenes directory demonstrates various Motion Canvas capabilities:
 - Node signals and reactive programming
 - Logging and debugging techniques
 
-## Guidelines for coding 
-- Creates tests and plan before code
-- Run one pass of the tests that MUST fail (do not create mock tests)
-- The tests must be integrated, not unit tests, so make just one large test per instruction I give you. 
+Coding Specific guidelines are in @coder.go
+Examples are in the EXAMPLES.md dir
+
+### Guildelines for how to plan out a scene
+Follow the following process 
+1. Build out a plan. You need to think about the objects to use, how they will be initialized, then relate to each other athe
+2. Build out a spec. Your spec must loosely follow the specification in the @motion_canvas_mega_spec.md.
+3. Save the plan to the claude_plans dirs using the format scene_<scene_name>_<datetime>.json
+4. Code out the scene

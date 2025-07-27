@@ -43,3 +43,9 @@ cd tools/fetch_iconify && go run tool_definitions/fetch_iconify.go "icon-name"
 cd tools/append_png_to_excalidraw && node append_png_to_excalidraw.js "icon-name.png" "../../excalidraw_canvases/diagram.excalidraw"
 ``` 
 
+
+## Guidelines for coding 
+- Creates tests and plan before code
+- Run one pass of the tests that MUST fail (do not create mock tests)
+- The tests must be integrated, not unit tests, so make just one large test per instruction I give you. 
+- 
