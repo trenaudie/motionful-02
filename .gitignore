@@ -15,4 +15,6 @@ dist
 *.sw?
 
 backupdev-branches/
+ssh_config
+src/**/*.meta
 **/public/assets

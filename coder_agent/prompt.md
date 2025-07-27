@@ -4,4 +4,4 @@ Current task:
 
 Guidelines:
 - You must work in a GIT WORKTREE under the path tools/fetch_iconify/
-- You must log all of 
+- You must log all o
