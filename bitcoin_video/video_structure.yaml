@@ -1,0 +1,150 @@
+# Bitcoin Million Dollar Prediction: Structured Video Timeline
+# Total Runtime: ~8 minutes
+
+- type: "commentary"
+  text: "Two of Wall Street's biggest Bitcoin bulls just made the same shocking prediction on different networks within days of each other. Both are calling for Bitcoin to hit one million dollars. But here's what's really interesting—neither mainstream financial media nor crypto media is connecting these dots. And when you see what's happening behind the scenes, you'll understand why this isn't just hype."
+
+- type: "clip"
+  source: "video_1.json"
+  start: "00:06:24"
+  end: "00:06:31"
+  summary: "Tom Lee confidently states Bitcoin should be worth over a million as digital gold"
+  visual_relevance: "high"
+  filename: "clip_01_tom_lee_million_prediction.mp4"
+
+- type: "commentary"
+  text: "Let me paint you the picture. We've got Tom Lee from Fundstrat—the guy who's been right about Bitcoin before—sitting on a major financial network basically saying Bitcoin should be worth over a million per coin in the next few years. Meanwhile, Bitcoin maximalist Samson Mow is making an even bolder claim on a different show—saying we could see anywhere from 500,000 to a million dollars in just the next 12 months."
+
+- type: "clip"
+  source: "video_2.json"
+  start: "00:00:21"
+  end: "00:00:29"
+  summary: "Samson Mow predicts 500K-1M Bitcoin in next 12 months during interview"
+  visual_relevance: "high"
+  filename: "clip_02_samson_mow_bull_run.mp4"
+
+- type: "commentary"
+  text: "And then you have CNBC running segments about crypto being under pressure while Tesla's Bitcoin holdings quietly grew to 1.25 billion dollars."
+
+- type: "clip"
+  source: "video_3.json"
+  start: "00:00:24"
+  end: "00:00:31"
+  summary: "CNBC reports Tesla's Bitcoin holdings worth 1.25 billion dollars"
+  visual_relevance: "medium"
+  filename: "clip_03_cnbc_tesla_holdings.mp4"
+
+- type: "commentary"
+  text: "Here's where it gets interesting. Lee isn't just throwing out numbers. He's doing math that most people aren't paying attention to. He's saying Bitcoin at current prices is basically just keeping up with inflation."
+
+- type: "clip"
+  source: "video_1.json"
+  start: "00:01:38"
+  end: "00:01:47"
+  summary: "Tom Lee explains S&P average P.E. was 17.6 times in 2019"
+  visual_relevance: "medium"
+  filename: "clip_04_tom_lee_pe_ratio.mp4"
+
+- type: "clip"
+  source: "video_1.json"
+  start: "00:01:47"
+  end: "00:01:59"
+  summary: "Tom Lee describes six 'extinction-like events' including COVID and inflation"
+  visual_relevance: "high"
+  filename: "clip_05_tom_lee_extinction_events.mp4"
+
+- type: "commentary"
+  text: "Think about this—if you take the 2021 Bitcoin high and adjust it for real inflation, we should already be at 100-101K. Lee is saying 120K-130K means you're only beating inflation by 20-30% over four years. That's not spectacular for the supposedly revolutionary digital asset. But here's what Lee understands that most people don't: Bitcoin isn't competing with stocks anymore. It's competing with gold."
+
+- type: "commentary"
+  text: "Now, Samson Mow is coming from a different angle, but reaching the same conclusion. He's looking at adoption patterns."
+
+- type: "clip"
+  source: "video_2.json"
+  start: "00:02:31"
+  end: "00:02:41"
+  summary: "Samson Mow discusses countries adopting Bitcoin and ETF capital flows"
+  visual_relevance: "high"
+  filename: "clip_06_samson_mow_adoption.mp4"
+
+- type: "clip"
+  source: "video_2.json"
+  start: "00:02:41"
+  end: "00:02:53"
+  summary: "Mow mentions MicroStrategy accumulating 600,000+ Bitcoin"
+  visual_relevance: "medium"
+  filename: "clip_07_samson_mow_microstrategy.mp4"
+
+- type: "commentary"
+  text: "Countries are adopting Bitcoin. The ETFs are absorbing massive capital. Companies like MicroStrategy have accumulated over 600,000 Bitcoin. And here's the kicker—Mow says we should already be over 200K based on current adoption levels."
+
+- type: "commentary"
+  text: "But then you flip to CNBC, and they're talking about crypto being under pressure. They mention Tesla's Bitcoin holdings almost in passing—1.25 billion dollars. But what they don't emphasize is that this represents a massive recovery from when Tesla sold three-quarters of their holdings in 2022."
+
+- type: "clip"
+  source: "video_3.json"
+  start: "00:00:33"
+  end: "00:00:40"
+  summary: "CNBC mentions Tesla sold three quarters of holdings in 2022"
+  visual_relevance: "medium"
+  filename: "clip_08_tesla_sell_off.mp4"
+
+- type: "clip"
+  source: "video_3.json"
+  start: "00:00:44"
+  end: "00:00:49"
+  summary: "Analyst notes Tesla could have had 5 billion if they held everything"
+  visual_relevance: "low"
+  filename: "clip_09_tesla_opportunity_cost.mp4"
+
+- type: "commentary"
+  text: "The report mentions Tesla could have had 5 billion if they hadn't sold. But think about what that tells us about institutional behavior. Tesla sold at the bottom and is now watching their remaining holdings explode in value."
+
+- type: "commentary"
+  text: "Here's what I think is really happening. We're seeing a complete disconnect between how traditional financial media covers Bitcoin and what the actual data is showing. Tom Lee is essentially saying Bitcoin at 120K is undervalued by traditional metrics. Samson Mow is saying we're missing a massive institutional adoption wave that should have already pushed prices to 200K+. And traditional media is focused on short-term price movements while missing the bigger structural shift."
+
+- type: "commentary"
+  text: "But here's the uncomfortable truth both of these guys are dancing around: if they're right about million-dollar Bitcoin, it means most people are going to get priced out. Mow actually addresses this directly."
+
+- type: "clip"
+  source: "video_2.json"
+  start: "00:12:06"
+  end: "00:12:12"
+  summary: "Samson Mow explains price makes people want Bitcoin"
+  visual_relevance: "medium"
+  filename: "clip_10_mow_price_psychology.mp4"
+
+- type: "clip"
+  source: "video_2.json"
+  start: "00:12:12"
+  end: "00:12:28"
+  summary: "Mow describes how people want Bitcoin at higher prices but not lower ones"
+  visual_relevance: "high"
+  filename: "clip_11_mow_buyer_behavior.mp4"
+
+- type: "commentary"
+  text: "He's basically saying that retail investors wait for higher prices before they get interested. They don't want Bitcoin at 80K or 90K, but they'll want it at 200K. The institutional money is front-running the retail wave, and by the time regular people wake up, they'll be paying premium prices. This isn't some conspiracy—it's just market dynamics. But it raises serious questions about whether Bitcoin can fulfill its original promise of financial democratization if it becomes a million-dollar asset primarily held by corporations and governments."
+
+- type: "commentary"
+  text: "What's really fascinating is watching how different networks frame the same story. One network gives Tom Lee a platform to explain why Bitcoin should be worth a million dollars based on gold market comparisons. Another lets Samson Mow explain why current adoption levels justify much higher prices. And a third focuses on short-term pressure while barely acknowledging the institutional accumulation happening in the background."
+
+- type: "commentary"
+  text: "None of them are connecting these dots into a coherent narrative. But when you put it all together, you get a picture of an asset that's potentially undervalued by traditional metrics, experiencing unprecedented institutional adoption, and approaching a tipping point where retail FOMO could create the final push to astronomical prices."
+
+- type: "commentary"
+  text: "The question isn't whether Bitcoin can reach a million dollars—both Lee and Mow make compelling cases that it should based on current trends. The question is what happens to the global financial system when a volatile digital asset becomes more valuable than most countries' entire economies."
+
+- type: "commentary"
+  text: "So here's my question for you: Are we watching the final accumulation phase before Bitcoin breaks into seven figures? Or are these predictions just the latest cycle of crypto hype? Because if Lee and Mow are right, the window for average people to accumulate meaningful amounts of Bitcoin is closing fast. The institutions are already here. The question is whether you'll be on the right side of this trade when the music stops."
+
+- type: "commentary"
+  text: "Let me know what you think in the comments. Are million-dollar Bitcoin predictions realistic, or are we setting ourselves up for another bubble? Hit subscribe if you want more analysis that connects the dots mainstream media won't."
+
+# Video Production Notes:
+# - All timestamps are from the original raw video files
+# - Clips should maintain original audio quality
+# - Prioritize clips marked as "high" visual relevance
+# - Commentary sections will be recorded separately as voiceover
+# - Total estimated runtime: 8 minutes
+# - Clips total approximately 2 minutes of raw footage
+# - Commentary sections total approximately 6 minutes

@@ -19,3 +19,4 @@ ssh_config
 src/**/*.meta
 **/public/assets
 .env
+videos_raw
