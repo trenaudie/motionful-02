@@ -25,6 +25,7 @@ On top of all the Core tools that you will be defined to you, you may also use t
 - **PNG to Excalidraw Tool**: Call `tools/append_png_to_excalidraw/append_png_to_excalidraw.js` from the project root to append a PNG saved locally to an Excalidraw file. The tool expects PNGs to be in `public/assets/pngs/` directory and can add them to any `.excalidraw` file in the `excalidraw_canvases/` directory.
 
 - **Read** : This is one of the Core tools, but I must insist that you use it before trying the Write or Edit to a file, be it a code file or a json file. 
+
 ## Directory Structure
 
 ### Key Directories
