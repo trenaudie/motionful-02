@@ -1,16 +1,26 @@
 # Git Worktree Configuration Status
 
-**Last Updated**: 2025-07-26
+**Last Updated**: 2025-07-27
 
 ## Current Worktree Setup
 
 ### Main Worktree
 - **Location**: `/Users/tanguy.renaudie/motionful-02/`
 - **Branch**: `main` 
-- **Commit**: `ef3f3c1` - adding some tools and excalidraws
+- **Commit**: `2e7f054` - Updated main branch with latest changes
 - **Purpose**: Primary development environment for Motion Canvas project
 
 ### Development Worktrees
+
+#### Understanding Claude Development
+- **Location**: `/home/bits/motionful-02/dev-branches/understanding_claude/`
+- **Branch**: `understanding_claude`
+- **Commit**: `2e7f054` - Merged main branch content
+- **Purpose**: Development branch for understanding Claude Code workflows
+- **Key Features**:
+  - Claude workflow scenes and animations
+  - GitHub search tools
+  - Motion Canvas integration examples
 
 #### Excalidraw Tools Development
 - **Location**: `/Users/tanguy.renaudie/motionful-02/dev-branches/excalidraw/`
@@ -26,12 +36,20 @@
 ## Branch Structure
 
 ```
-main (ef3f3c1)
+main (2e7f054)
+├── understanding_claude (2e7f054)
+│   └── [Claude Code workflow development]
 └── excalidraw-tools (9285671)
     └── [Feature development for Excalidraw tools]
 ```
 
 ## Workflow Guidelines
+
+### For Understanding Claude Development
+1. **Work in**: `/home/bits/motionful-02/dev-branches/understanding_claude/`
+2. **Commit changes**: One feature at a time in understanding_claude branch
+3. **Test changes**: Use Motion Canvas development server
+4. **Switch contexts**: No need to stash - use separate directories
 
 ### For Excalidraw Development
 1. **Work in**: `/Users/tanguy.renaudie/motionful-02/dev-branches/excalidraw/`
@@ -42,13 +60,16 @@ main (ef3f3c1)
 ### For Main Development  
 1. **Work in**: `/Users/tanguy.renaudie/motionful-02/`
 2. **Stay on**: `main` branch for general Motion Canvas work
-3. **Merge features**: When excalidraw-tools features are ready
+3. **Merge features**: When feature branches are ready
 
 ## Available Commands
 
 ```bash
 # List all worktrees
 git worktree list
+
+# Switch to understanding claude development
+cd dev-branches/understanding_claude
 
 # Switch to excalidraw development
 cd dev-branches/excalidraw
