@@ -25,17 +25,17 @@ USE CASES:
 - Quick icon prototyping and testing
 
 USAGE:
-CLI: go run tool_definitions/fetch_iconify.go <query>
+CLI: go run tools/fetch_iconify/tool_definitions/fetch_iconify.go <query>
 Examples:
-  go run tool_definitions/fetch_iconify.go cat
-  go run tool_definitions/fetch_iconify.go home
-  go run tool_definitions/fetch_iconify.go user-profile
+  go run tools/fetch_iconify/tool_definitions/fetch_iconify.go cat
+  go run tools/fetch_iconify/tool_definitions/fetch_iconify.go home
+  go run tools/fetch_iconify/tool_definitions/fetch_iconify.go user-profile
 
 PARAMETERS:
 - query (string): Search term for icon lookup (e.g., "cat", "home", "user")
 
 OUTPUT:
-- PNG file saved to: ../../public/assets/pngs/<query>.png
+- PNG file saved to: public/assets/pngs/<query>.png
 - File size: 256x256 pixels
 - Format: PNG with transparent background where applicable
 
@@ -66,8 +66,8 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Usage: go run tool_definitions/fetch_iconify.go <query>")
-		fmt.Println("Example: go run tool_definitions/fetch_iconify.go cat")
+		fmt.Println("Usage: go run tools/fetch_iconify/tool_definitions/fetch_iconify.go <query>")
+		fmt.Println("Example: go run tools/fetch_iconify/tool_definitions/fetch_iconify.go cat")
 		os.Exit(1)
 	}
 
@@ -91,7 +91,14 @@ func main() {
 		os.Exit(1)
 	}
 
-	outputPath := filepath.Join("../../../public/assets/pngs", query+".png")
+	// Create the output directory if it doesn't exist
+	outputDir := "public/assets/pngs"
+	if err := os.MkdirAll(outputDir, 0755); err != nil {
+		fmt.Printf("Error creating output directory: %v\n", err)
+		os.Exit(1)
+	}
+
+	outputPath := filepath.Join(outputDir, query+".png")
 	err = utils.SvgToPNG(svgData, outputPath, 256, 256)
 	if err != nil {
 		fmt.Printf("Error converting SVG to PNG: %v\n", err)

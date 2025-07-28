@@ -20,7 +20,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Tools that you can use 
 On top of all the Core tools that you will be defined to you, you may also use the following tools, and view them for the documentation of the tool. 
 
-- **Iconify Icon Fetcher**: Call `tools/fetch_iconify/tool_definitions/fetch_iconify.go` from the project root using go commands to download an SVG from Iconify and convert it to PNG, saving it to `public/assets/pngs/`. This is currently the only option for downloading external assets! So use it if the user wants a static image or SVG from the internet, or if you feel it would be useful for the current Canvas.
+- **Iconify Icon Fetcher**: Call `tools/fetch_iconify/fetch_iconify_standalone.go` from the project root using go commands to download an SVG from Iconify and convert it to PNG, saving it to `public/assets/pngs/`. This is currently the only option for downloading external assets! So use it if the user wants a static image or SVG from the internet, or if you feel it would be useful for the current Canvas.
 
 - **PNG to Excalidraw Tool**: Call `tools/append_png_to_excalidraw/append_png_to_excalidraw.js` from the project root to append a PNG saved locally to an Excalidraw file. The tool expects PNGs to be in `public/assets/pngs/` directory and can add them to any `.excalidraw` file in the `excalidraw_canvases/` directory.
 
@@ -37,16 +37,17 @@ On top of all the Core tools that you will be defined to you, you may also use t
 
 ### Tool Usage Examples
 ```bash
-# Fetch an icon and convert to PNG
-cd tools/fetch_iconify && go run tool_definitions/fetch_iconify.go "icon-name"
+# Fetch an icon and convert to PNG (run from project root)
+go run tools/fetch_iconify/fetch_iconify_standalone.go "icon-name"
 
 # Add PNG to Excalidraw file  
 cd tools/append_png_to_excalidraw && node append_png_to_excalidraw.js "icon-name.png" "../../excalidraw_canvases/diagram.excalidraw"
 ``` 
 
 
+
 ## Guidelines for coding 
 - Creates tests and plan before code
 - Run one pass of the tests that MUST fail (do not create mock tests)
 - The tests must be integrated, not unit tests, so make just one large test per instruction I give you. 
-- 
+- For writing out the actual content using the Write or Edit tool: If you are creating an Excalidraw, make sure to save it as a working JSON, with the .json extension, instead of the .excalidraw extension
